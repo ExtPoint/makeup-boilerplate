@@ -1,0 +1,106 @@
+@import '../../../less/bootstrap/variables';
+
+.PlansSelectorStep {
+
+  &__container {
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 160px;
+    height: 231px;
+    margin: 0 5px 20px;
+  }
+
+  &__days {
+    background-color: #d2d3d5;
+    border-radius: 10px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 27px;
+    color: #fff;
+    font-weight: 600;
+
+    &_coupon {
+      background-color: @brand-success;
+    }
+  }
+
+  &__days-count {
+    font-size: 34px;
+    line-height: 27px;
+  }
+
+  &__days-count-coupon {
+    position: relative;
+    top: -4px;
+    font-size: 22px;
+    padding-left: 8px;
+  }
+
+  &__most-popular {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('./images/most-popular.svg');
+    width: 96px;
+    height: 96px;
+    background-position: 11px -11px;
+  }
+
+  &__price {
+    position: relative;
+    border: dashed 1px #d2d3d5;
+    border-radius: 10px;
+    min-height: 140px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 5px;
+
+    &:hover {
+      border-color: @brand-primary;
+    }
+  }
+
+  &__price-old {
+    height: 55px;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 28px;
+    text-decoration: line-through;
+    color: #231f20;
+  }
+
+  &__price-current {
+    font-size: 22px;
+    line-height: 20px;
+    color: @brand-primary;
+    padding-left: 5px;
+
+    &_coupon {
+      text-decoration: line-through;
+    }
+  }
+
+  &__price-coupon {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    color: @brand-success;
+  }
+
+  &__price-in-days {
+    font-size: 14px;
+    color: #939598;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__price-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 12px;
+  }
+}

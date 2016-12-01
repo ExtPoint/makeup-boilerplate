@@ -50,26 +50,13 @@ const webpackEasy = require('webpack-easy');
 
 webpackEasy
     .entry(entry)
-    .plugin([
-        imageDirs.length > 0 && new CopyWebpackPlugin(imageDirs),
-        !webpackEasy.isProduction() && new HtmlWebpackPlugin({
-            template: 'frontend/index.html',
-            filename: 'index.html',
-            TEMPLATE_NAMES: Object.keys(templates),
-            inject: false,
-        }),
-    ])
-    .plugin(Object.keys(templates).map(name => {
-        return new HtmlWebpackPlugin({
-            template: 'frontend/index.html',
-            filename: name + '.html',
-            inject: false,
-            BUNDLE_NAME: name,
-            FILES_TO_REQUIRE: [].concat(templates[name])
-        });
-    }))
+    .output({
+        path: `${__dirname}/public/`,
+        filename: 'assets/bundle-[name].js',
+        chunkFilename: 'assets/bundle-[name].js',
+    })
     .serverConfig({
-        contentBase: './web',
+        contentBase: './public',
         historyApiFallback: true,
         proxy: {
             '**': 'http://localhost',
@@ -92,4 +79,22 @@ webpackEasy
                 interlaced: false
             }),
         ]
-    });
+    })
+    .plugin([
+        imageDirs.length > 0 && new CopyWebpackPlugin(imageDirs),
+        !webpackEasy.isProduction() && new HtmlWebpackPlugin({
+            template: 'frontend/index.html',
+            filename: 'index.html',
+            TEMPLATE_NAMES: Object.keys(templates),
+            inject: false,
+        }),
+    ])
+    .plugin(Object.keys(templates).map(name => {
+        return new HtmlWebpackPlugin({
+            template: 'frontend/index.html',
+            filename: name + '.html',
+            inject: false,
+            BUNDLE_NAME: name,
+            FILES_TO_REQUIRE: [].concat(templates[name])
+        });
+    }));
