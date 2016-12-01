@@ -1,0 +1,168 @@
+@import '../../less/bootstrap/variables.less';
+
+.landing-about-easy {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  &__item{
+    display: block;
+    border: 2px dotted #BABBBD;
+    margin: 26px auto 26px auto;
+    max-width: 350px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 45px 20px 0px 20px;
+    @media (min-width: @screen-sm){
+      margin: 56px auto 56px auto;
+    }
+    @media (min-width: @screen-md){
+      font-size: 24px;
+    }
+    &:hover{
+      border: 2px dotted @brand-primary;
+    }
+    &:active{
+      border: 3px dotted @brand-primary;
+    }
+  }
+  &__item_cloud{
+    height: 420px;
+    margin: 0px auto 26px auto;
+    @media (min-width: @screen-sm){
+      height: 510px;
+      margin: 0px 0px 56px 0px;
+    }
+  }
+  &__item_allday{
+    height: 420px;
+    margin: 0px auto 26px auto;
+    @media (min-width: @screen-sm){
+      height: 420px;
+      margin: 0px 0px 56px 0px;
+    }
+    @media (min-width: @screen-lg){
+      height: 390px;
+    }
+  }
+  &__item_multyaccount{
+    height: 420px;
+    @media (min-width: @screen-sm){
+      height: 390px;
+    }
+  }
+  &__item_anydivais{
+    height: 420px;
+    @media (min-width: @screen-sm){
+      height: 480px;
+    }
+    @media (min-width: @screen-lg){
+      height: 505px;
+    }
+  }
+  &__item_coast{
+    height: 420px;
+    margin: 0px auto 0px auto;
+    max-width: 350px;
+    padding: 15px 20px 0px 20px;
+    @media (min-width: @screen-sm){
+      max-width: 730px;
+      height: 300px;
+    }
+    @media (min-width: @screen-md){
+      height: 390px;
+      padding: 45px 20px 0px 20px;
+    }
+  }
+  &__wrap-item-img{
+    margin: 0px 0px 15px 0px;
+  }
+  &__item-img{
+    display: block;
+    height: 150px;
+  }
+  &__item-img_cloud{
+    background-color: transparent;
+    background-image: url('./images/easy-cloud.svg');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 46%;
+  }
+  &__item-img_allday{
+    background-color: transparent;
+    background-image: url('./images/easy-allday.svg');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 49%;
+  }
+  &__item-img_multyaccount{
+    background-color: transparent;
+    background-image: url('./images/easy-multyaccount.svg');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 49%;
+  }
+  &__item-img_anydivais{
+    background-color: transparent;
+    background-image: url('./images/easy-anydivaise.svg');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 39%;
+  }
+  &__item-img_coast{
+    background-color: transparent;
+    background-image: url('./images/easy-coast.svg');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 38%;
+    @media (min-width: @screen-sm){
+      background-size: 19%;
+    }
+  }
+  &__item-text{
+    margin: 0px 0px 15px 0px;
+  }
+  &__item-text_red{
+    color: @brand-primary;
+  }
+  &__call-to-tray{
+    font-size: 28px;
+    font-family: @font-family-serif;
+    max-width: 760px;
+    margin: 50px auto 20px auto;
+    @media (min-width: @screen-sm){
+      margin: 110px auto 57px auto;
+      font-size: 33px;
+    }
+  }
+  &__to-tray{
+    display: block;
+    font-size: 20px;
+    background-color: @brand-primary;
+    margin: 0px auto 0px auto;
+    max-width: 350px;
+    padding: 18px 0px 18px 0px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    &:link{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:visited{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:hover{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:focus{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:active{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

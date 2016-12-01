@@ -1,0 +1,252 @@
+@import '../../less/bootstrap/variables.less';
+
+.landing-about-hwork {
+  
+  @md: @screen-md / @screen-lg;
+  @sm: @screen-sm / @screen-lg;
+  
+  padding: 0px 0px 20px 0px;
+  &__container{
+    position: relative;
+    // padding: 963px 0px 20px 0px;
+    @media (min-width: @screen-sm){
+      padding: 963px*@sm 0px 20px 0px;
+      background-position: center 110px*@sm;
+      background-color: transparent;
+      background-image: url('./images/comfort.png');
+      background-repeat: no-repeat no-repeat;
+      background-size: 100% auto;
+    }
+    @media (min-width: @screen-md){
+      padding: 963px*@md 0px 20px 0px;
+      background-position: center 110px*@md;
+    }
+    @media (min-width: @screen-lg){
+      padding: 963px 0px 20px 0px;
+      background-position: center 110px;
+    }
+  }
+  &__img{
+    width: 100%;
+    display: block;
+    @media (min-width: @screen-sm){
+      display: none;
+    }
+  }
+  &__item{
+    font-size: 18px;
+    border: 3px solid @brand-primary;
+    border-radius: 25px;
+    padding: 15px 15px 15px 15px;
+    line-height: 25px;
+    margin: 10px 0px 10px 0px;
+    @media (min-width: @screen-sm){
+      border: 5px solid @brand-primary;
+      position: absolute;
+      font-size: 22px*@sm;
+      padding: 30px*@sm 30px*@sm 30px*@sm 30px*@sm;
+      border-radius: 25px*@sm;
+      line-height: 25px*@sm;
+      font-family: @font-family-myriad-regular;
+    }
+    @media (min-width: @screen-md){
+      font-size: 22px*@md;
+      padding: 30px*@md 30px*@md 30px*@md 30px*@md;
+      border-radius: 25px*@md;
+      line-height: 25px*@md;
+      font-family: @font-family-sans-serif;
+    }
+    @media (min-width: @screen-lg){
+      font-size: 22px;
+      padding: 30px 30px 30px 30px;
+      border-radius: 25px;
+      line-height: 25px;
+    }
+  }
+  &__item_top{
+    top: 10px;
+    left: 330px;
+    @media (min-width: @screen-sm){
+      left: 330px*@sm;
+      max-width: 440px*@sm;
+    }
+    @media (min-width: @screen-md){
+      left: 330px*@md;
+      max-width: 440px*@md;
+    }
+    @media (min-width: @screen-lg){
+      left: 330px;
+      max-width: 440px;
+    }
+  }
+  &__item_middle{
+    left: 639px;
+    top: 235px;
+    @media (min-width: @screen-sm){
+      left: 639px*@sm;
+      max-width: 480px*@sm;
+      top: 145px;
+    }
+    @media (min-width: @screen-md){
+      left: 639px*@md;
+      max-width: 480px*@md;
+      top: 235px*@md;
+    }
+    @media (min-width: @screen-lg){
+      left: 639px;
+      max-width: 480px;
+      top: 235px;
+    }
+  }
+  &__item_bottom{
+    top: 680px;
+    left: 55px;
+    @media (min-width: @screen-sm){
+      left: 55px*@sm;
+      max-width: 286px*@sm;
+      top: 420px;
+    }
+    @media (min-width: @screen-md){
+      left: 55px*@md;
+      max-width: 286px*@md;
+      top: 680px*@md;
+    }
+    @media (min-width: @screen-lg){
+      left: 55px;
+      max-width: 286px;
+      top: 680px;
+    }
+  }
+  &__triangl-first{
+    width: 70px;
+    height: 46px;
+    background-color: transparent;
+    background-image: url('./images/triangl-1.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -46px;
+    left: 53px;
+    display: none;
+    @media (min-width: @screen-sm){
+      display: block;
+      width: 70px*@sm;
+      height: 46px*@sm;
+      bottom: -46px*@sm;
+      left: 53px*@sm;
+    }
+    @media (min-width: @screen-md){
+      width: 70px*@md;
+      height: 46px*@md;
+      bottom: -46px*@md;
+      left: 53px*@md;
+    }
+    @media (min-width: @screen-lg){
+      width: 70px;
+      height: 46px;
+      bottom: -46px;
+      left: 53px;
+    }
+  }
+  &__triangl-second{
+    width: 46px;
+    height: 70px;
+    background-color: transparent;
+    background-image: url('./images/triangl-2.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 89px;
+    right: -46px;
+    display: none;
+    @media (min-width: @screen-sm){
+      display: block;
+      width: 46px*@sm;
+      height: 70px*@sm;
+      right: -46px*@sm;
+      bottom: 89px*@sm;
+    }
+    @media (min-width: @screen-md){
+      width: 46px*@md;
+      height: 70px*@md;
+      right: -46px*@md;
+      bottom: 89px*@md;
+    }
+    @media (min-width: @screen-lg){
+      width: 46px;
+      height: 70px;
+      right: -46px;
+      bottom: 89px;
+    }
+  }
+  &__triangl-third{
+    width: 70px;
+    height: 46px;
+    background-color: transparent;
+    background-image: url('./images/triangl-1.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -46px;
+    left: 89px;
+    display: none;
+    @media (min-width: @screen-sm){
+      display: block;
+      width: 70px*@sm;
+      height: 46px*@sm;
+      bottom: -46px*@sm;
+      left: 89px*@sm;
+    }
+    @media (min-width: @screen-md){
+      width: 70px*@md;
+      height: 46px*@md;
+      bottom: -46px*@md;
+      left: 89px*@md;
+    }
+    @media (min-width: @screen-lg){
+      width: 70px;
+      height: 46px;
+      bottom: -46px;
+      left: 89px;
+    }
+  }
+  &__red-text{
+    color: @brand-primary;
+  }
+  &__banner{
+    background-color: @brand-primary;
+    color: #fff;
+    font-family: @font-family-serif;
+    font-size: 20px;
+    @media (min-width: @screen-sm){
+      font-size: 44px*@sm;
+    }
+    @media (min-width: @screen-md){
+      font-size: 44px*@md;
+    }
+    @media (min-width: @screen-lg){
+      font-size: 44px;
+    }
+  }
+  &__banner-container{
+    padding: 30px 0px 10px 32%;
+    background-color: transparent;
+    background-image: url('./images/robot.png');
+    background-position: left bottom;
+    background-repeat: no-repeat no-repeat;
+    background-size: 80px;
+    @media (min-width: @screen-sm){
+      padding: 80px*@sm 0px 60px*@sm 380px*@sm;
+      background-size: 21%;
+    }
+    @media (min-width: @screen-md){
+      padding: 80px*@md 0px 60px*@md 380px*@md;
+    }
+    @media (min-width: @screen-lg){
+      padding: 80px 0px 60px 380px;
+    }
+  }
+}

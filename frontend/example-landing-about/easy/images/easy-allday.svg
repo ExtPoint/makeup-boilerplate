@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg width="169.23" height="136" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <title>icons_01</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m57.89625,116.65l-30.37,0a10,10 0 0 1 -10,-10l0,-74.5a10,10 0 0 1 10,-10l48.88,0" stroke-width="14px" stroke-linejoin="round" stroke-linecap="round" stroke="#ef3a5c" fill="none" id="svg_1"/>
+  <text font-family="MyriadPro-BlackCond, Myriad Pro" fill="#ef3a5c" font-size="58.392429px" y="88.400002" x="30.416248" id="svg_2">24/7</text>
+  <path d="m61.87625,6.53c0,-2.2 1.47,-3 3.26,-1.68l20.87,14.86a2.68,2.68 0 0 1 0,4.64l-20.85,14.87c-1.79,1.28 -3.26,0.52 -3.26,-1.68l-0.02,-31.01z" fill="#ef3a5c" id="svg_3"/>
+  <path d="m111.31625,22.28l30.37,0a10,10 0 0 1 10,10l0,74.5a10,10 0 0 1 -10,10l-48.88,0" stroke-width="14px" stroke-linejoin="round" stroke-linecap="round" stroke="#ef3a5c" fill="none" id="svg_4"/>
+  <path d="m96.33625,132.4c0,2.2 -1.47,3 -3.26,1.68l-20.92,-14.87a2.68,2.68 0 0 1 0,-4.64l20.87,-14.86c1.79,-1.28 3.26,-0.52 3.26,1.68l0.05,31.01z" fill="#ef3a5c" id="svg_5"/>
+ </g>
+</svg>
