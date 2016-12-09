@@ -82,7 +82,7 @@ webpackEasy
     })
     .plugin([
         imageDirs.length > 0 && new CopyWebpackPlugin(imageDirs),
-        !webpackEasy.isProduction() && new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             template: 'frontend/index.html',
             filename: 'index.html',
             TEMPLATE_NAMES: Object.keys(templates),
